@@ -1,0 +1,17 @@
+<p>
+  hello works!
+</p>
+<h1 [class]="'my-class'">{{ name }}</h1>
+
+<div *ngIf="isMax">MAX IS TRUE</div>
+
+<div *ngFor="let num of arr let i=index let odd=odd" (click)="clickMe(num)">
+  {{ num }}
+</div>
+
+<!-- <ng-container [ngIf]="isMax; else elseTemplate">
+  <div>true</div>
+</ng-container>
+<ng-template #elseTemplate>
+  <div>false</div>
+</ng-template> -->
